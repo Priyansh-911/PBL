@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>AKTU Study Forum</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	</head>
+	
+	<body>
+		<nav>
+			<ul>
+				<li class="logo">AKTU Study Forum</li>
+				<li class="btn"><span class="fas fa-bars"></span></li>
+				<div class="items">
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Services</a></li>
+					<li><a href="#">Contact</a></li>
+				</div>
+				<li class="search-icon">
+					<input type="search" placeholder="Search">
+					<label class="icon">
+					<span class="fas fa-search"></span>
+					</label>
+				</li>
+			</ul>
+		</nav>
+
+		<div class="content">
+			<div class="text">
+				Welcome to AKTU Study Forum
+			</div>
+			<br>
+			<div class="p">
+				Select the college you want to access.
+			</div>
+			<br>
+			<div class="p">
+				Select the department you want to access.
+			</div>
+			<br>
+			<div class="p">
+				Select the subject whose notes you want to access.
+			</div>
+		</div>
+
+		<script>
+			$('nav ul li.btn span').click(function() {
+				$('nav ul div.items').toggleClass("show");
+				$('nav ul li.btn span').toggleClass("show");
+				});
+		</script>
+
+		<footer>
+			<div class="footerBottom">
+				<p>Copyright &copy;2023; Designed by <span class="designer">Team xPRSS</span></p>
+			</div>
+		</footer>
+		
+	</body>
+
+</html>
