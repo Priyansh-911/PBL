@@ -12,4 +12,3 @@ config = {
 }
 
 firebase = pyrebase.initialize_app(config)
-print("done")
