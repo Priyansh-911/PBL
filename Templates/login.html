@@ -17,12 +17,12 @@
 				<li class="logo">AKTU Study Forum</li>
 				<li class="btn"><span class="fas fa-bars"></span></li>
 				<div class="items">
-					<li><a href="C:\Users\rajes\OneDrive\Desktop\pbl main\pbl.html">Home</a></li>
+					<li><a href="{{url_for('index')}}">Home</a></li>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Contact</a></li>
 					<li><a href="">Login</a></li>
-                    <li><a href="C:\Users\rajes\OneDrive\Desktop\pbl main\register.html">Register </a></li>
+                    <li><a href="{{url_for('register')}}">Register </a></li>
 				</div>
 				<li class="search-icon">
 					<input type="search" placeholder="Search">
@@ -56,7 +56,7 @@
           <input type="submit" value="Login">
         </div>
       </form>
-      <p>Don't have an account? style="color: black;"<a href=" C:\Users\rajes\OneDrive\Desktop\pbl main\register.html"style="color: black;">Register</a></p>
+      <p style="color: black;">Don't have an account?<a href="{{url_for('register')}}" style="color: black;">Register</a></p>
     </div>
   </div>
 
