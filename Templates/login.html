@@ -21,7 +21,7 @@
 					<li><a href="#">About</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Contact</a></li>
-					<li><a href="">Login</a></li>
+					<!-- <li><a href="">Login</a></li> -->
                     <li><a href="{{url_for('register')}}">Register </a></li>
 				</div>
 				<li class="search-icon">
@@ -38,19 +38,19 @@
       <h2 class="form-title"style="color: black;">Login</h2>
       <form action="#" method="post">
         <div class="form-group">
-          <label for="role"style="color: black;">Role:</label>
-          <select id="role" name="role">
-            <option value="teacher"style="color: black;">Teacher</option>
-            <option value="student"style="color: black;">Student</option>
+          <label for="role" style="color: black;">Role:</label>
+          <select id="role" name="role" style="color: black;">
+            <option value="teacher" style="color: black;">Teacher</option>
+            <option value="student" style="color: black;">Student</option>
           </select>
         </div>
         <div class="form-group">
           <label for="username"style="color: black;">Username:</label>
-          <input type="text" id="username" name="username" required>
+          <input type="text" id="username" name="username" required style="color: black;">
         </div>
         <div class="form-group">
           <label for="password"style="color: black;">Password:</label>
-          <input type="password" id="password" name="password" required>
+          <input type="password" id="password" name="password" required style="color: black;">
         </div>
         <div class="form-group">
           <input type="submit" value="Login">
