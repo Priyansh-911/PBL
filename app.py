@@ -4,14 +4,15 @@ import pyrebase
 
 app = Flask(__name__)
 config = {
-    'apiKey': "AIzaSyD-HUi7t4AxKJCjdZoJwXNh1QjGL4Emfx8",
-    'authDomain': "my-first-project-903ae.firebaseapp.com",
-    'projectId': "my-first-project-903ae",
-    'storageBucket': "my-first-project-903ae.appspot.com",
-    'messagingSenderId': "469417932442",
-    'appId': "1:469417932442:web:8fd49fe77cbd1b0ece9123",
+    'apiKey': "AIzaSyCQ_rHiRe5jylQi1Yv3XhaKpgG7GrDGDOg",
+    'authDomain': "aktu-auth-424a7.firebaseapp.com",
+    'projectId': "aktu-auth-424a7",
+    'storageBucket': "aktu-auth-424a7.appspot.com",
+    'messagingSenderId': "905549747775",
+    'appId': "1:905549747775:web:1cd323bca4e3ecb4024a8a",
+    'measurementId': "G-W6Z3QZ6Q78",
     'databaseURL' : ""
-}
+  }
 firebase = pyrebase.initialize_app(config)
 auth=firebase.auth()
 app.secret_key='secret'
