@@ -1,6 +1,7 @@
 from flask import Flask, render_template, session, request, redirect
 import pyrebase
 
+
 app = Flask(__name__)
 config = {
     'apiKey': "AIzaSyD-HUi7t4AxKJCjdZoJwXNh1QjGL4Emfx8",
@@ -15,31 +16,36 @@ firebase = pyrebase.initialize_app(config)
 auth=firebase.auth()
 app.secret_key='secret'
 
+
+
 @app.route('/')
 def index():
     return render_template('index.html')
 
-@app.route('/authenticate')
-def authenticate():
-    if request.method == 'POST':
-        email=request.form.get('email')
-        password=request.form.get('passowrd')
-        try:
-            user = auth.sign_in_with_email_and_password(email,password)
-            session['user']=email
-        except:
-            return 'Failed to login'
-    if user in session:
-        return 'Hello User '
-    
-
 @app.route('/login',methods=['POST','GET'])
 def login():
+     if request.method == 'POST':
+        email=request.form.get('username')
+        password=request.form.get('password')
+        try:
+           auth.sign_in_with_email_and_password(email,password)
+           session['user']=email
+           return "Login Successfull"
+        except:
+            auth.sign_in_with_email_and_password(email,password)
+            return 'hello'
      return render_template('login.html')
     
 @app.route('/register',methods=['POST','GET'])
 def register():
-
+    if request.method == 'POST':
+        email=request.form.get('username')
+        password=request.form.get('password')
+        try:
+            auth.create_user_with_email_and_password(email,password)
+            return "Account Successfully created"
+        except:
+            return 'try Again'
     return render_template('register.html')
 
 @app.route('/logout')
@@ -47,4 +53,4 @@ def logout():
     return redirect('/')
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run()

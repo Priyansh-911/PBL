@@ -10,9 +10,9 @@ config = {
     'databaseURL' : ""
 }
 
-firebase = pyrebase.initialize_app(config)
-auth=firebase.auth()
-email="testing@gmail.com"
-password="123456"
-user=auth.create_user_with_email_and_password(email,password)
-print(user)
+# firebase = pyrebase.initialize_app(config)
+# auth=firebase.auth()
+# email="testing@gmail.com"
+# password="123456"
+# user=auth.create_user_with_email_and_password(email,password)
+
