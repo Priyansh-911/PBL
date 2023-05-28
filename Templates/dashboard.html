@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+</head>
+
+<body style="overflow: hidden;">
+    <nav>
+        <ul>
+            <li class="logo">AKTU Study Forum</li>
+            <li class="btn"><span class="fas fa-bars"></span></li>
+            <div class="items">
+                <li><a href="{{url_for('index')}}">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <!-- <li><a href="">Login</a></li> -->
+                <li><a href="{{url_for('register')}}">Register </a></li>
+            </div>
+            <li class="search-icon">
+                <input type="search" placeholder="Search">
+                <label class="icon">
+                <span class="fas fa-search"></span>
+                </label>
+            </li>
+        </ul>
+    </nav>
+
+
+
+    <script>
+        $('nav ul li.btn span').click(function() {
+            $('nav ul div.items').toggleClass("show");
+            $('nav ul li.btn span').toggleClass("show");
+            });
+    </script>
+
+    <footer>
+        <div class="footerBottom">
+            <p>Copyright &copy;2023; Designed by <span class="designer">Team JSR</span></p>
+        </div>
+    </footer>
+    
+
+</html>
