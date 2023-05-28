@@ -31,10 +31,12 @@ def login():
         try:
            auth.sign_in_with_email_and_password(email,password)
            session['user']=email
+        #    uid = auth.currentUser.uid
+        #    print(uid)
            return redirect(url_for('dashboard'))
         except:
             auth.sign_in_with_email_and_password(email,password)
-            return 'hello'
+            return render_template('login.html')
      return render_template('login.html')
     
 @app.route('/register',methods=['POST','GET'])
@@ -55,7 +57,8 @@ def dashboard():
     if 'user' in session:
       user = session['user']
       print(user)
-      print(session['user'])
+    #   print(session['user'])
+      print(session)
       return render_template('dashboard.html', name = user)
 
 @app.route('/logout')
