@@ -1,3 +1,4 @@
 Flask == 2.3.2
 Pyrebase4 == 4.7.0
 requests-toolbelt == 0.10.1
+firebase-admin == 6.1.0

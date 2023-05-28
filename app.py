@@ -1,19 +1,17 @@
 from flask import Flask, render_template, session, request, redirect, url_for
 import pyrebase
+import firebase_admin
+from firebase_admin import credentials
+import json
 
 
+#initialize app
 app = Flask(__name__)
-config = {
-    'apiKey': "AIzaSyCQ_rHiRe5jylQi1Yv3XhaKpgG7GrDGDOg",
-    'authDomain': "aktu-auth-424a7.firebaseapp.com",
-    'projectId': "aktu-auth-424a7",
-    'storageBucket': "aktu-auth-424a7.appspot.com",
-    'messagingSenderId': "905549747775",
-    'appId': "1:905549747775:web:1cd323bca4e3ecb4024a8a",
-    'measurementId': "G-W6Z3QZ6Q78",
-    'databaseURL' : ""
-  }
-firebase = pyrebase.initialize_app(config)
+
+#connecting to firebase
+cred = credentials.Certificate("aktu-auth-424a7-firebase-adminsdk-fzyqv-da854a3261.json")
+firebase_admin.initialize_app(cred)
+firebase = pyrebase.initialize_app(json.load(open('aktuauth.json')))
 auth=firebase.auth()
 app.secret_key='secret'
 
