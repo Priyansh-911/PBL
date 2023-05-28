@@ -31,7 +31,7 @@ def login():
         try:
            auth.sign_in_with_email_and_password(email,password)
            session['user']=email
-           return "Login Successfull"
+           return render_template('dashboard.html')
         except:
             auth.sign_in_with_email_and_password(email,password)
             return 'hello'
@@ -44,7 +44,7 @@ def register():
         password=request.form.get('password')
         try:
             auth.create_user_with_email_and_password(email,password)
-            return "Account Successfully created"
+            return render_template('login.html')
         except:
             return 'try Again'
     return render_template('register.html')
