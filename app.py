@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, request, redirect
+from flask import Flask, render_template, session, request, redirect, url_for
 import pyrebase
 
 
@@ -31,7 +31,7 @@ def login():
         try:
            auth.sign_in_with_email_and_password(email,password)
            session['user']=email
-           return render_template('dashboard.html')
+           return redirect(url_for('dashboard'))
         except:
             auth.sign_in_with_email_and_password(email,password)
             return 'hello'
@@ -48,6 +48,15 @@ def register():
         except:
             return 'try Again'
     return render_template('register.html')
+
+
+@app.route('/dashboard')
+def dashboard():
+    if 'user' in session:
+      user = session['user']
+      print(user)
+      print(session['user'])
+      return render_template('dashboard.html', name = user)
 
 @app.route('/logout')
 def logout():
