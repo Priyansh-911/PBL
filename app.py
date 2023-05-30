@@ -3,7 +3,7 @@ import pyrebase
 import firebase_admin
 from firebase_admin import credentials, auth
 import json
-
+from registeration import reg
 
 #initialize app
 app = Flask(__name__)
@@ -60,11 +60,13 @@ def login():
 @app.route('/register',methods=['POST','GET'])
 def register():
     if request.method == 'POST':
-        email=request.form.get('username')
-        password=request.form.get('password')
+        email = request.form.get('username')
+        password = request.form.get('password')
         try:
-            authen.create_user_with_email_and_password(email,password)
-            return render_template('login.html')
+            # authen.create_user_with_email_and_password(email,password)
+            reg(email, password)
+
+            return render_template('dashboard.html')
         except:
             return 'try Again'
     return render_template('register.html')
