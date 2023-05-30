@@ -8,6 +8,66 @@
     <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <style> 
+body{
+  font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form-wrapper{
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgb(0, 0, 0,0.1);
+}
+.form-title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+
+  .form-group input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+  }
+
+  .form-group input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+</style>
+
 </head>
 
 <body style="overflow: hidden;">
@@ -33,6 +93,50 @@
 
 
 
+    <div class="container">
+        <div class="form-wrapper">
+          <h2 class="form-title">Data Page</h2>
+        <marquee behavior="" direction="" style="color:red;">*All marked Fields are mandatory. </marquee>
+          <form action="#" method="get">
+            <div class="form-group">
+              <label for="username">Full Name:</label>
+              <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+              <label for="Phone">Phone no:</label>
+              <input type="tel" id="Phone" name="Phone" required>
+            </div>
+            <div class="form-group">
+              <label for="Dob">Date of Birth:</label>
+              <input type="date" name="Dob" id="Dob">
+            </div>
+            <div class="form-group">
+              <label for="Adhar">Adhar No:</label>
+              <input type="number" id="Adhar">
+            </div>
+            <div class="form-group">
+              <label for="role">Domain:</label>
+              <select id="role" name="role">
+                <option  selected value="teacher">None</option>
+                <option value="teacher">Computer Science </option>
+                <option value="teacher">Electrical</option>
+                <option value="teacher">Mechanical</option>
+                <option value="teacher">Civil</option>
+                <option value="teacher">B pharma</option>
+                <option value="teacher">Aerospace</option>
+                <option value="teacher">Student</option>
+                <option value="teacher">Businesses and marketing strategy</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <input type="submit" value="submit">
+            </div>
+           </form>
+            </div>
+      </div>
+    
+
+
     <script>
         $('nav ul li.btn span').click(function() {
             $('nav ul div.items').toggleClass("show");
@@ -46,5 +150,4 @@
         </div>
     </footer>
     
-
 </html>
