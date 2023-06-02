@@ -45,16 +45,9 @@ def login():
            result  = authen.sign_in_with_email_and_password(email,password)
            user = auth.verify_id_token(result['idToken'])
            uid = user['uid']
-           return redirect(url_for('dashboard'))
+           return render_template('')
         except:
-<<<<<<< Updated upstream
             authen.sign_in_with_email_and_password(email,password)
-=======
-<<<<<<< HEAD
-=======
-            authen.sign_in_with_email_and_password(email,password)
->>>>>>> 4d5adaaf10606df2d1b16ddba342d3690ca41646
->>>>>>> Stashed changes
             return render_template('login.html')
      return render_template('login.html')
 
