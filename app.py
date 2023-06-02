@@ -45,7 +45,7 @@ def login():
            result  = authen.sign_in_with_email_and_password(email,password)
            user = auth.verify_id_token(result['idToken'])
            uid = user['uid']
-           return render_template('')
+           return redirect(url_for('dashboard'))
         except:
             authen.sign_in_with_email_and_password(email,password)
             return render_template('login.html')
