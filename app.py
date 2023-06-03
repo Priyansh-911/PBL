@@ -47,15 +47,16 @@ def login():
            uid = user['uid']
            return redirect(url_for('dashboard'))
         except:
-<<<<<<< Updated upstream
-            authen.sign_in_with_email_and_password(email,password)
-=======
-<<<<<<< HEAD
-=======
-            authen.sign_in_with_email_and_password(email,password)
->>>>>>> 4d5adaaf10606df2d1b16ddba342d3690ca41646
->>>>>>> Stashed changes
-            return render_template('login.html')
+            return "Error"
+# <<<<<<< Updated upstream
+#             authen.sign_in_with_email_and_password(email,password)
+# =======
+# <<<<<<< HEAD
+# =======
+#             authen.sign_in_with_email_and_password(email,password)
+# >>>>>>> 4d5adaaf10606df2d1b16ddba342d3690ca41646
+# >>>>>>> Stashed changes
+#             return render_template('login.html')
      return render_template('login.html')
 
 
@@ -72,7 +73,6 @@ def register():
         try:
             # authen.create_user_with_email_and_password(email,password)
             reg(email, password)
-
             return render_template('dashboard.html')
         except:
             return 'try Again'

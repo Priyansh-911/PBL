@@ -11,6 +11,7 @@ def reg(email, password):
   result  = authen.sign_in_with_email_and_password(email,password)
   user = auth.verify_id_token(result['idToken'])
   uid = user['uid']
-  print(uid)
+  
+  
 
 
