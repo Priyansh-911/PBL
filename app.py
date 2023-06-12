@@ -48,15 +48,12 @@ def login():
            return redirect(url_for('dashboard'))
         except:
             return "Error"
-# <<<<<<< Updated upstream
 #             authen.sign_in_with_email_and_password(email,password)
-# =======
-# <<<<<<< HEAD
-# =======
 #             authen.sign_in_with_email_and_password(email,password)
-# >>>>>>> 4d5adaaf10606df2d1b16ddba342d3690ca41646
-# >>>>>>> Stashed changes
 #             return render_template('login.html')
+
+            authen.sign_in_with_email_and_password(email,password)
+            return render_template('login.html')
      return render_template('login.html')
 
 
