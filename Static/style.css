@@ -108,9 +108,9 @@ nav ul li.btn span.show:before{
         padding: 9px 40px 9px 0;
     }
     nav ul div.items{
-        z-index: -1;
+        z-index: 999;
         position: fixed;
-        top: -220px;
+        top: -999px;
         right: 0;
         width: 100%;
         background: #222222;
