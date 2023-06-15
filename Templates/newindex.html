@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU FORUM</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'newindex.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!----------Header-------------------->
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <img src="{{url_for('static', filename = 'uptu_logo.png')}}"  width="125px">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="{{url_for('login')}}">Login</a></li>
+            <li><a href="{{url_for('register')}}">Register</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Add to Favourites</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-2">
+        <h1>AKTU Forum</h1>
+        <p>Success isn't always about greatness. It's about consistency. Consistent <br> hard work gains success.Grratness will come.</p>
+        <a href="" class="btn">Explore Material &#8594;</a>
+    </div>
+    <div class="col-2">
+    <img src="{{url_for('static', filename='9804e3d1-23c8-42ca-a2d0-d9ea483e58ba.jpg')}}" alt="">
+</div>
+</div>
+</div>
+</div>
+ <!-----------Footer-------------------------------------------------->
+ <div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App for Android and ios mobile phone</p>
+            <div class="app-logo">
+            <img src="C:\Users\rajes\OneDrive\Desktop\AKTU FORUM\app-store.png">
+            <img src="C:\Users\rajes\OneDrive\Desktop\AKTU FORUM\play-store.png">
+            </div>
+            </div>
+              <div class="footer-col-2">
+                  <img src="{{url_for('static', filename = 'uptu_logo.png')}}">
+                  <p>Our Purpose Is To Provide Quality Education and
+                   its Benefits of  Accessible to the Many.</p>
+        </div>
+            <div class="footer-col-3">
+            <h3>Useful links</h3>
+            <ul>
+            <li>Coupons</li>
+            <li>Blog Post</li>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>              
+            </ul>
+            </div>
+             <div class="footer-col-4">
+            <h3>Follow Us</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+                <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - KIET</p>
+        </div>
+    </div>
+                   
+                  
+</body>
+</html>
