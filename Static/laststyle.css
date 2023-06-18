@@ -1,0 +1,143 @@
+body{
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background: radial-gradient(white,pink);
+    height: 355px;
+}
+
+.logo img{
+    padding-left: 120px;
+    padding-top: 80px;
+    width: 100px;
+}
+.content nav{
+        text-align: center;
+}
+nav ul{
+    display: inline;
+    margin-left: 900px;
+    font-size: 15px;
+}
+nav ul li{
+    display: inline;
+    padding-right: 60px;
+}
+li a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: orangered;
+}
+.container h1{
+text-indent: 100px;
+}
+.con{
+    border: 1px solid black;
+    height: 50px;
+    background-color: black;
+}
+.con p{
+  color: white;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-style: italic;
+}
+.mainbody{
+    border: 1px solid white;
+    height: 355px;
+    background-color: white;
+}
+.brands{
+    border: 1px solid pink;
+    background: radial-gradient(white,pink);
+    height: 560px;
+    text-transform: uppercase;
+  
+}
+.brands h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+#parent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+#parent img{
+    padding: 55px;
+    width: 355px;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+#parent img:hover{
+    filter: grayscale(0);
+}
+     
+
+
+
+
+
+
+
+
+/*-----------------------------------------footer----------------------------------------------------*/
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    
+}
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #fff;
+    margin-bottom: 20px;
+}
+.footer-col-1, .footer-col-2, .footer-col-3, .footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 180px;
+    margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.copyright{
+    text-align: center;
+}
