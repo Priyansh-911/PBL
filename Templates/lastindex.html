@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home page</title>
-    <link rel="shortcut icon" href="Aktu.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="{{url_for('static', filename = 'Aktu.png')}}" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'laststyle.css')}}">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -13,13 +13,13 @@
     <div class="header">
         <div class="content">
                 <div class="logo">
-                    <img src="Aktu.png" alt="Aktu logo">
+                    <img src="{{url_for('static', filename = 'Aktu.png')}}" alt="Aktu logo">
                 </div>
                 <nav>
                     <ul>
-                        <li><a href="">Home</a></li>
-                        <li><a href="">Login</a></li>
-                        <li><a href="">Register</a></li>
+                        <li><a href="{{url_for('index')}}">Home</a></li>
+                        <li><a href="{{url_for('login')}}">Login</a></li>
+                        <li><a href="{{url_for('register')}}">Register</a></li>
                         <li><a href="">Contact</a></li>
                         <li>  <a href="" class="btn">&#x2764;</a></li>
                     </ul>
@@ -42,13 +42,13 @@
             <h1>Partners</h1>
             <div id = "parent">
                 <div>
-                  <img src = "byjus-logo.png">
+                  <img src = "{{url_for('static', filename = 'byjus-logo.png')}}">
                 </div>
                 <div>
-                  <img src = "Unacademy_logo.png">
+                  <img src = "{{url_for('static', filename = 'Unacademy_logo.png')}}">
                 </div>
                 <div>
-                  <img src = "logo-1622270260722-extramarks-smart-classes-500x500.png">
+                  <img src = "{{url_for('static', filename = 'logo-1622270260722-extramarks-smart-classes-500x500.png')}}">
                 </div>
               </div>
         <!-----------Footer-------------------------------------------------->
@@ -59,12 +59,12 @@
             <h3>Download Our App</h3>
             <p>Download App for Android and ios mobile phone</p>
             <div class="app-logo">
-            <img src="C:\Users\rajes\OneDrive\Desktop\AKTU FORUM\app-store.png">
-            <img src="C:\Users\rajes\OneDrive\Desktop\AKTU FORUM\play-store.png">
+            <img src="{{url_for('static', filename = 'app-store.png')}}">
+            <img src="{{url_for('static', filename = 'play-store.png')}}">
             </div>
             </div>
               <div class="footer-col-2">
-                  <img src="C:\Users\rajes\OneDrive\Desktop\AKTU FORUM\uptu_logo.png">
+                  <img src="{{url_for('static', filename = 'uptu_logo.png')}}">
                   <p>Our Purpose Is To Provide Quality Education and
                    its Benefits of  Accessible to the Many.</p>
         </div>
