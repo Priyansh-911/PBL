@@ -47,11 +47,6 @@ def login():
            uid = user['uid']
            return redirect(url_for('dashboard'))
         except:
-            return "Error"
-#             authen.sign_in_with_email_and_password(email,password)
-#             authen.sign_in_with_email_and_password(email,password)
-#             return render_template('login.html')
-
             authen.sign_in_with_email_and_password(email,password)
             return render_template('login.html')
      return render_template('login.html')
