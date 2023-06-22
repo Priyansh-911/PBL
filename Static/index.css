@@ -1,0 +1,204 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.header{
+    background: radial-gradient(white,pink);
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+   
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: orangered;
+}
+.col-2 p{
+    color: violet;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2{
+    max-width: 100%;
+    padding:50px 0;
+}
+.col-2 img{
+    float: right;
+    max-width: 100%;   
+    padding: 50px 0;
+}
+/*----for circle image-----*/
+.col-2 img{  
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   border: 5px solid black;
+   padding: 5px;
+}   
+
+
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding:8px 30px ;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: 0.5sec;
+}
+.btn:hover{
+    background: #563434;
+}
+
+.header row{
+    margin-top: 70px;
+}
+/*-----------------marquee------------------*/
+.con{
+    border: 1px solid black;
+    height: 50px;
+    background-color: black;
+}
+.con p{
+  color: aqua;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-style: italic;
+}
+
+/*-------------------Brands---------------------*/
+body{
+    margin: 0%;
+    padding: 0%;
+}
+.heading{
+    background-color: white;
+}
+.heading h1{
+    text-align: center;
+    color: blue;
+}
+.parent{
+    text-align: justify;
+    background-color:white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    height: auto;
+
+
+    
+}
+.parent div img{
+    
+    margin: 10px;
+    width: 300px;
+    padding: 10px;
+   
+}
+.child img{
+    filter: grayscale(100%);
+}
+.child img:hover{
+    filter: grayscale(0%);
+}
+
+/*-----------------------------------------footer----------------------------------------------------*/
+body{
+    margin: 0;
+    padding: 0;
+}
+.footer{
+    display: flex;
+    background: black;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    height: 400px;
+    
+}
+.install h3,p{
+    color: red;
+}
+.copyright p{
+    color: blue;
+}
+footer.img{
+    width: 5px;
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 100px;
+}
+.content1{
+   
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+}
+.install img{
+    width: 250px;
+}
+.logo img{
+    width: 250px;
+}
+
+.content2{
+   
+    text-align: center;
+    align-content: center;
+    margin: 10px;
+    
+}
+.footer ul{
+    list-style-type: none;
+    color: orange;
+}
+.copyright{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: orangered;
+    text-align: center;
+}

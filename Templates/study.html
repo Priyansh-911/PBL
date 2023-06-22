@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename = 'study.css')}}">
+	<title>Study Material: AKTU Study Forum</title>
+</head>
+<body>
+	
+	<!-- The sidebar -->
+	<div class="sidebar">
+		<a class="active" href="#">Latest</a>
+		<a href="#">Subject 1</a>
+		<a href="#">Subject 2</a>
+		<a href="#">Subject 3</a>
+	</div>
+	
+	<!-- Page content -->
+	<div class="content">
+		<h2>LATEST UPLOADS</h2>
+		<div class="sub latest">
+			
+			<div class="box b1">
+				<!-- <img src="https://placehold.jp/fed7d7/ff0000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="latest_1"> -->
+				<div id="pdf-viewer">
+					<object data="{{ url_for('static', filename= 'OS-Unit1 (1).pdf') }}" type="application/pdf" width="100%" height="100%">
+						<p>Your browser does not support PDFs. Please download the PDF to view it: <a href="{{ url_for('static', filename='OS-Unit1 (1).pdf') }}">Download PDF</a>.</p>
+					</object>
+				</div>
+				<li class="sn">OS unit-1.pdf</li>
+				<li class="cn">College: KIET</li>
+				<li class="dn">Dept.: IT dept.</li>
+				<li class="fn">Faculty: Mr. Deepak Vishwakarma</li>
+			</div>
+			<div class="box b2">
+				<!-- <img src="https://placehold.jp/fed7d7/ff0000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="latest_2"> -->
+				<div id="pdf-viewer">
+					<object data="{{ url_for('static', filename= 'Unit 2 Notes Part 1.pdf') }}" type="application/pdf" width="100%" height="100%">
+						<p>Your browser does not support PDFs. Please download the PDF to view it: <a href="{{ url_for('static', filename='Unit 2 Notes Part 1.pdf') }}">Download PDF</a>.</p>
+					</object>
+				</div>
+				<li class="sn">TAFL unit-2.pdf</li>
+				<li class="cn">College: KIET</li>
+				<li class="dn">Dept.: IT dept.</li>
+				<li class="fn">Faculty: Ms. Meenakshi Chauhan</li>
+			</div>
+			<div class="box b3">
+				<!-- <img src="https://placehold.jp/fed7d7/ff0000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="latest_3"> -->
+				<div id="pdf-viewer">
+					<object data="{{ url_for('static', filename= 'Graph (1).pdf') }}" type="application/pdf" width="100%" height="100%">
+						<p>Your browser does not support PDFs. Please download the PDF to view it: <a href="{{ url_for('static', filename='Graph (1).pdf') }}">Download PDF</a>.</p>
+					</object>
+				</div>
+				<li class="sn">Graph (DSTL).pdf</li>
+				<li class="cn">College: KIET</li>
+				<li class="dn">Dept.: IT</li>
+				<li class="fn">Faculty: Ms. Priya Singh</li>
+			</div>
+			<div class="box b4">
+				<!-- <img src="https://placehold.jp/fed7d7/ff0000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="latest_4"> -->
+				<div id="pdf-viewer">
+					<object data="{{ url_for('static', filename= 'Module 4.pdf') }}" type="application/pdf" width="100%" height="100%">
+						<p>Your browser does not support PDFs. Please download the PDF to view it: <a href="{{ url_for('static', filename='Module 4.pdf') }}">Download PDF</a>.</p>
+					</object>
+				</div>
+				<li class="sn">Maths-IV(unit - 4).pdf</li>
+				<li class="cn">College: KIET</li>
+				<li class="dn">Dept.: Applies Science dept.</li>
+				<li class="fn">Faculty: Ms. Swati Maheshwari</li>
+			</div>
+		</div>
+		<h2>SUBJECT 1</h2>
+		<div class="sub s1">
+			
+			<div class="box b1">
+				<img src="https://placehold.jp/f9f9d2/f0e800/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s1_1">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b2">
+				<img src="https://placehold.jp/f9f9d2/f0e800/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s1_2">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b3">
+				<img src="https://placehold.jp/f9f9d2/f0e800/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s1_3">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b4">
+				<img src="https://placehold.jp/f9f9d2/f0e800/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s1_4">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+		</div>
+		<h2>SUBJECT 2</h2>
+		<div class="sub s2">
+			
+			<div class="box b1">
+				<img src="https://placehold.jp/dcf9d2/10f000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s2_1">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b2">
+				<img src="https://placehold.jp/dcf9d2/10f000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s2_2">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b3">
+				<img src="https://placehold.jp/dcf9d2/10f000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s2_3">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b4">
+				<img src="https://placehold.jp/dcf9d2/10f000/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s2_4">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+		</div>
+		<h2>SUBJECT 3</h2>
+		<div class="sub s3">
+			
+			<div class="box b1">
+				<img src="https://placehold.jp/d2f7f9/00c0f0/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s3_1">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b2">
+				<img src="https://placehold.jp/d2f7f9/00c0f0/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s3_2">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b3">
+				<img src="https://placehold.jp/d2f7f9/00c0f0/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s3_3">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+			<div class="box b4">
+				<img src="https://placehold.jp/d2f7f9/00c0f0/250x250.png?text=Hi%2C%20I%20am%20a%20placeholder!&css=%7B%22border-radius%22%3A%2215px%22%7D" alt="s3_4">
+				<li class="sn">subject-name.pdf</li>
+				<li class="cn">College: college-name</li>
+				<li class="dn">Dept.: dept-name</li>
+				<li class="fn">Faculty: facul-name</li>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>

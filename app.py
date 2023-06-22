@@ -1,4 +1,4 @@
-from flask import Flask, render_template, session, request, redirect, url_for
+from flask import Flask, render_template, session, request, redirect, url_for, flash
 import pyrebase
 import firebase_admin
 from firebase_admin import credentials, auth
@@ -25,7 +25,7 @@ app.secret_key='secret'
 
 @app.route('/')
 def index():
-    return render_template('lastindex.html')
+    return render_template('index.html')
 
 
 
@@ -47,8 +47,10 @@ def login():
            uid = user['uid']
            return redirect(url_for('dashboard'))
         except:
-            authen.sign_in_with_email_and_password(email,password)
-            return render_template('login.html')
+            flash("Error:Wrong Credentials")
+            return redirect(url_for('login'))
+            # authen.sign_in_with_email_and_password(email,password)
+            # return render_template('login.html')
      return render_template('login.html')
 
 
@@ -86,7 +88,13 @@ def dashboard():
       return render_template('dashboard.html', name = user)
 
 
+@app.route('/material')
+def material():
+    return render_template('study.html')
 
+@app.route('/contact')
+def contact():
+    return render_template('contactform.html')
 
 
 

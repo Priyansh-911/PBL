@@ -1,0 +1,83 @@
+body{
+    margin-top: -5px;
+	padding: 0px;
+	text-align: center;
+	background: url(uptu_logo.png);
+    background-size:cover;
+	background-position:none;
+	font-family:sans-serif;
+	width:100%;
+}
+
+.contact-title{
+	margin-top:100px;
+	color:#FFF;
+	text-transform:uppercase;
+	transition:all 4s ease-in-out;
+	font-size:200px;
+}
+
+.contact-title h1{
+	font-size:36px;
+	line-height:10px;
+	font-size:150px;
+	margin-top:400px;
+}
+.contact-title h2{
+	font-size:100px;
+	text-decoration:underline;
+}
+
+form{
+	margin-top:50px;
+	transition:all 4s ease-in-out;
+}
+.form-control{
+	width:1200px;
+	background:transparent;
+	border:none;
+	outline:none;
+	border-bottom:2px solid gray;
+	color:#FFF;
+	font-size:60px;
+	margin-bottom:100px;
+}
+
+input{
+	height:100px;
+}
+
+form .submit{
+	background:#FF5722;
+	border-color:transparent;
+	color:#fff;
+	font-size:70px;
+	font-weight:bold;
+	letter-spacing:4px;
+	height:200px;
+	margin-top:50px;
+	border-radius:100px;
+}
+
+form .submit:hover{
+	background-color:#f44336;
+	cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

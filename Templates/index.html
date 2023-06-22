@@ -1,68 +1,103 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKTU FORUM</title>
+    <link rel="stylesheet" href="{{url_for('static', filename = 'index.css')}}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
 
-<html lang="en" dir="ltr">
+</head>
+<body>
+    <!----------Header-------------------->
+    <div class="header">
+    <div class="container">
+    <div class="navbar">
+    <div class="logo">
+        <img src="{{url_for('static', filename = 'uptu_logo.png')}}"  width="125px">
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{url_for('index')}}">Home</a></li>
+            <li><a href="{{url_for('login')}}">Login</a></li>
+            <li><a href="{{url_for('register')}}">Register</a></li>
+            <li><a href="{{url_for('contact')}}">Contact</a></li>
+            <li><a href="">Add to Favourites</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="row">
+    <div class="col-2">
+        <h1>AKTU Forum</h1>
+        <p>Success isn't always about greatness. It's about consistency. Consistent <br> hard work gains success.Grratness will come.</p>
+        <a href="{{url_for('material')}}" class="btn">Explore Material &#8594;</a>
+    </div>
+    <div class="col-2">
+    <img src="{{url_for('static', filename = 'download.jpg')}}" alt="">
+</div>
+</div>
+</div>
+</div>
 
-	<head>
-		<meta charset="UTF-8" />
-		<title>AKTU Study Forum</title>
-		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-		<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-	</head>
-	
-	<body>
-		<nav>
-			<ul>
-				<li class="logo">AKTU Study Forum</li>
-				<li class="btn"><span class="fas fa-bars"></span></li>
-				<div class="items">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Contact</a></li>
-					<li><a href="{{url_for('login')}}">Login</a></li>
-				</div>
-				<li class="search-icon">
-					<input type="search" placeholder="Search">
-					<label class="icon">
-					<span class="fas fa-search"></span>
-					</label>
-				</li>
-			</ul>
-		</nav>
+  <!----MARQUEE FIELD-->
+  <div class="con">
+    <marquee behavior="" direction=""><b><p>Success isn't always about greatness. It's about consistency.Consistent
+        hard work gains success.Greatness will come.</p></b></marquee>
+    </div>
+<!-----------------------------------Brands--------------------------------------------------------------------->
 
-		<div class="content">
-			<div class="text">
-				Welcome to AKTU Study Forum
-			</div>
-			<br>
-			<div class="p">
-				Select the college you want to access.
-			</div>
-			<br>
-			<div class="p">
-				Select the department you want to access.
-			</div>
-			<br>
-			<div class="p">
-				Select the subject whose notes you want to access.
-			</div>
-		</div>
+<div class="heading">
+    <h1>Partners</h1><hr>
+</div>
+<div class="parent">
+    
+    <div class="child">
+        <img src="{{url_for('static', filename = 'AICTE.png')}}" alt="AICTE">
+    </div>
+    <div class="child">
+        <img src="{{url_for('static', filename = 'logo-1622270260722-extramarks-smart-classes-500x500.png')}}" alt="extrmarks">
+    </div>
+    <div class="child">
+        <img src="{{url_for('static', filename = 'NAAC.png')}}" alt="NAAC">
+    </div>
+</div>
 
-		<script>
-			$('nav ul li.btn span').click(function() {
-				$('nav ul div.items').toggleClass("show");
-				$('nav ul li.btn span').toggleClass("show");
-				});
-		</script>
 
-		<footer>
-			<div class="footerBottom">
-				<p>Copyright &copy;2023; Designed by <span class="designer">Team JSR</span></p>
-			</div>
-		</footer>
-		
-	</body>
 
+ <!-----------Footer-------------------------------------------------->
+ <div class="footer">
+    <div class="install">
+        <h3>Download Our App</h3>
+        <p>Download App for Android and ios mobile phone</p>
+        <img src="{{url_for('static', filename = 'app-store.png')}}" alt="">
+        <img src="{{url_for('static', filename = 'play-store.png')}}" alt="">
+    </div>
+    <div class="logo">
+        <img src="{{url_for('static', filename = 'uptu_logo.png')}}" alt="">
+    </div>
+    <div class="content1">
+        <h5>Useful links</h5>
+        <ul>
+            <li>Return Policy</li>
+            <li>Join Affiliate</li>
+        </ul>
+    </div>
+    <div class="content2">
+        <h5>Follow Us</h5>
+        <ul>
+            <li>Facebook</li>
+            <li>Twitter</li>
+            <li>Intsagram</li>
+            <li>Youtube</li>
+    </ul>
+    </div><br>
+</div>
+<div class="copyright">
+    <p>Copyright 2023-KIET</p>
+</div>
+                   
+                  
+</body>
 </html>
