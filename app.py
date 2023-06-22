@@ -65,7 +65,7 @@ def register():
         try:
             # authen.create_user_with_email_and_password(email,password)
             reg(email, password)
-            return render_template('dashboard.html')
+            return redirect(url_for('dashboard'))
         except:
             return 'try Again'
     return render_template('register.html')
