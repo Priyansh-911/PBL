@@ -104,5 +104,5 @@ def profile():
 def logout():
     return redirect('/')
 
-if __name__ == "__main__":
-    app.run()
+if __name__ == '__main__':
+    app.run(port=8080, debug=True)
