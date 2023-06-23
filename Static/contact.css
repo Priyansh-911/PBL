@@ -1,81 +1,156 @@
+
+/* **********************************header***********************************************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
-    margin-top: -5px;
-	padding: 0px;
+    font-family: 'Poppins', sans-serif;
+	background:url(/Static/aktu.jpg);
+	height: 100%;
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.header{
+    /* background: radial-gradient(white,pink);
+	 */
+	 background-color: rgb(193, 188, 188);
+    /*Opacity start*/
+    opacity: 0.7;
+    /*Opacity end*/
+    color: rgb(2, 2, 2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    
+	
+}
+.navbar{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+   
+}
+nav{
+    flex: auto;
+    text-align: revert;
+    margin-top: 41px;
+
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 50px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+li a:hover{
+    color: orangered;
+}
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 400px;
+}
+.col-2{
+	max-width: 20%;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+.col-2 img{
+    float: right;
+    max-width: 100%;   
+    padding: 50px 0;
+}
+
+.bg-text {
+	/* background-color: rgb(0,0,0); Fallback color */
+	background-color: rgba(0, 0, 0, 0.486); /* Black w/opacity/see-through */
+	color: white;
+	font-weight: bold;
+	/* border: 3px solid #f1f1f1; */
+	border-radius: 10px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-top: 50px;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 50%;
+	padding: 20px;
 	text-align: center;
-	background: url(uptu_logo.png);
-    background-size:cover;
-	background-position:none;
-	font-family:sans-serif;
-	width:100%;
+	transition: 0.1s;
 }
-
-.contact-title{
-	margin-top:100px;
-	color:#FFF;
-	text-transform:uppercase;
-	transition:all 4s ease-in-out;
-	font-size:200px;
+.bg-text:hover{
+	border: 3px solid #f4f7f4;
 }
-
-.contact-title h1{
-	font-size:36px;
-	line-height:10px;
-	font-size:150px;
-	margin-top:400px;
+input[type=text] {
+	width: 40%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border-bottom:3px solid rgb(249, 247, 247);
+	transition: 0.1s;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	background: none;
+	outline: none;
+	color: #f4f7f4;
+  }
+  textarea{
+	background: none;
+	outline: none;
+	border:3px solid rgb(249, 247, 247);
+	box-sizing: border-box;
+	color: #f4f7f4;
+  }
+  
+  ::placeholder{
+	color: #f4f7f486;
+	text-align: center;
+  }
+  .Send{
+	border: none;
+	color: white;
+	padding: 15px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px;
+	border-radius: 10px;
+	cursor: pointer;
+	background-color: black;
+  }
+  .Send:hover{
+	background-color: rgb(249, 245, 245);
+	color: rgb(9, 9, 9);
+  }
+#contact-form{
+	position: fixed;
+	bottom: 0;
 }
-.contact-title h2{
-	font-size:100px;
-	text-decoration:underline;
-}
-
-form{
-	margin-top:50px;
-	transition:all 4s ease-in-out;
-}
-.form-control{
-	width:1200px;
-	background:transparent;
-	border:none;
-	outline:none;
-	border-bottom:2px solid gray;
-	color:#FFF;
-	font-size:60px;
-	margin-bottom:100px;
-}
-
-input{
-	height:100px;
-}
-
-form .submit{
-	background:#FF5722;
-	border-color:transparent;
-	color:#fff;
-	font-size:70px;
-	font-weight:bold;
-	letter-spacing:4px;
-	height:200px;
-	margin-top:50px;
-	border-radius:100px;
-}
-
-form .submit:hover{
-	background-color:#f44336;
-	cursor:pointer;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

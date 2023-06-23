@@ -7,11 +7,55 @@
 <link rel="stylesheet" href="{{url_for('static', filename = 'contact.css')}}" type="text/css">
 </head>
 <body>
-    <div class="contact-title">
+    <!-- <div class="contact-title">
 	    <h1>Say Hello</h1>
-		<h2>We are alwas ready to serve you!</h2>
+		<h2>We are alwas ready to serve you!</h2> -->
 	</div>
-    <div class="contact-form">
+	    <!----------Header-------------------->
+		<div class="header">
+			<div class="container">
+			<div class="navbar">
+			<div class="logo">
+				<img src="{{url_for('static', filename = 'uptu_logo.png')}}"  width="125px">
+			</div>
+			<div class="col-2">
+				<img src="{{url_for('static', filename='9804e3d1-23c8-42ca-a2d0-d9ea483e58ba.jpg')}}" alt="">
+				<h1>AKTU FORUM</h1>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="{{url_for('index')}}">Home</a></li>
+					<li><a href="{{url_for('login')}}">Login</a></li>
+					<li><a href="{{url_for('register')}}">Register</a></li>
+					<li><a href="{{url_for('contact')}}">Contact</a></li>
+					<li><a href="">Add to Favourites</a></li>
+				</ul>
+			</nav>
+		</div>
+		</div>
+		</div>
+		<div class="contact-form">
+			<div class="bg-text">
+		  <h1 style="font-size:30px">Contact Us !</h1><br>
+
+  <p>We are alwas ready to serve you !</p><br>
+  <form>
+	<label for="fname"></label>
+	<input type="text" id="fname" name="fname" placeholder="First Name">
+	<label for="lname"></label>
+	<br>
+	<input type="text" id="lname" name="lname" placeholder="Last Name"><br><br>
+	<textarea rows="4" cols="50" placeholder="Enter the Issue here"></textarea><br><br>
+	<button class="Send"> Send </button>
+  </form>
+			</div>
+		</div>
+
+
+
+
+		<!-- --------------------------------------contact-form --------------------------------------------------------->
+    <!-- <div class="contact-form">
 	    <form id="contact-form" method="post" action="">
 		<input name="name" type="text" class="form-control" placeholder="Your Name" required>
 		<br>
@@ -22,7 +66,7 @@
 			</textarea><br>
 			
 			<input type="submit" class="form-control submit" value="SEND MESSAGE">
-    </div>
+    </div> -->
 
 </body>
 </html>
